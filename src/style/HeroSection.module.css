@@ -1,0 +1,133 @@
+.section {
+    padding-top: 90px;
+    background-image: url('./../assets/img/hero-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 700px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+}
+
+.title {
+    margin-bottom: 57px;
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #25495C
+}
+.descr {
+    margin-bottom: 73px;
+    font-family: 'GothamProRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color: #607483;
+}
+
+.btn {
+    margin-bottom: 250px;
+    padding: 29px 0 27px;
+    width: 300px;
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+}
+
+.img {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+@media (max-width:1200px) {
+    .section {
+        min-height: 650px;
+    }
+    .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:992px) {
+    .title {
+        margin-bottom: 40px;
+        font-size: 38px;
+    }
+    .descr {
+        margin-bottom: 60px;
+        font-size: 15px;
+    }
+    .section {
+        padding-top: 60px;
+        min-height: 500px;
+    }
+}
+
+@media (max-width:768px) {
+    .title {
+        display: inline-block;
+        margin: 0 auto 40px;
+        margin-bottom: 40px;
+        font-size: 32px;
+    }
+    .descr {
+        margin-bottom: 40px;
+        font-size: 15px;
+    }
+    .section {
+        padding-top: 60px;
+        min-height: 500px;
+    }
+    .left {
+        max-width: 450px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+
+    }
+    .btn {
+        padding: 29px 0 27px;
+        width: 100%;
+        font-family: 'GothamProMedium';
+        font-style: normal;
+        font-weight: 500;
+    }
+    .content {
+        grid-template-columns: none !important;
+        grid-template-rows: repeat(2, auto) !important;
+    }
+}
+@media (max-width:576px) {
+    .section {
+        padding-top: 20px;
+        min-height: 580px;
+    }
+    .title {
+        display: inline-block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .descr {
+        margin-bottom: 25px;
+        font-size: 13px;
+    }
+    .btn {
+        padding: 20px 0 21px;
+        width: 100%;
+        font-family: 'GothamProMedium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+    }
+}

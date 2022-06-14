@@ -1,0 +1,143 @@
+.serviceTitle {
+    margin-bottom: 32px;
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    /* identical to box height, or 48px */
+
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #25495C;
+}
+
+.serviceDescr {
+    margin: 0 auto 50px;
+    max-width: 945px;
+    font-family: 'GothamProRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #607483;
+}
+
+.serviceList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 35px;
+}
+
+.serviceItem {
+    padding: 50px 40px 20px;
+    min-height: 297px;
+    background: #FFFFFF;
+    border: 1px solid #E8E9EA;
+    border-radius: 5px;
+}
+
+.serviceItemBlock {
+    display: flex;
+    height: 100%;
+    min-height: 220px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.serviceItemTitle {
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #25495C;
+}
+
+.serviceItemDescr {
+    min-height: 100px;
+    font-family: 'GothamProRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #607483;
+}
+
+
+
+
+@media (max-width:992px) {
+    .serviceItem {
+        padding: 40px 20px 20px;
+        min-height: 297px;
+        background: #FFFFFF;
+        border: 1px solid #E8E9EA;
+        border-radius: 5px;
+    }
+    .serviceList {
+        column-gap: 15px;
+        row-gap: 25px;
+    }
+    .serviceTitle  {
+        font-size: 35px;
+    }
+    .serviceItemTitle {
+        font-size: 16px;
+    }
+    .serviceItemDescr {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:768px) {
+    .serviceTitle  {
+        font-size: 25px;
+    }
+    .serviceList {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 25px;
+    }
+}
+
+
+.pag {
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .serviceTitle  {
+        font-size: 16px;
+    }
+    .pag {
+        display: block;
+        margin-top: 27px;
+        text-align: center;
+    }
+    .swiperSl {
+        width: 288px;
+    }
+    .serviceList {
+        display: flex;
+        grid-template-columns: none;
+        grid-template-rows: none;
+        column-gap: 0;
+        row-gap: 0;
+    }
+}

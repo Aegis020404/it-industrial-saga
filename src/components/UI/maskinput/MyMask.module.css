@@ -1,0 +1,15 @@
+.maskInput {
+    padding: 24px 37px;
+    border: 1px solid #DADBDD;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-family: 'GothamProRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color:var(--rock-grey-color);
+    border-radius: 5px;
+    z-index: 3;
+}

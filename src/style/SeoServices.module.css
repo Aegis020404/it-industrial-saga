@@ -1,0 +1,137 @@
+.servicesSection {
+    padding-bottom: 110px;
+}
+
+.servicesTitle {
+    margin-bottom: 70px;
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #25495C;
+}
+
+.servicesCardList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.servicesList {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: 100px;
+}
+
+.servicesIHead {
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+}
+
+.servicesITitle {
+    font-family: 'GothamProMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: #141313;
+}
+
+.servicesIList {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    gap: 18px;
+}
+
+.servicesIItem {
+    font-family: 'GothamProRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color: #607483;
+}
+
+@media (max-width:992px) {
+    .servicesTitle {
+        margin-bottom: 50px;
+        font-size: 35px;
+    }
+    .servicesCardList {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+    .servicesList {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        gap: 70px;
+    }
+        
+    .servicesIHead {
+        margin-bottom: 30px;
+        gap: 25px;
+    }
+    .servicesITitle {
+
+        font-size: 17px;
+    }
+
+    .servicesIList {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        gap: 18px;
+    }
+    
+    .servicesIItem {
+        font-size: 14px;
+    } 
+}
+
+@media (max-width:768px) {
+    .servicesTitle {
+        margin-bottom: 50px;
+        font-size: 25px;
+    }
+    .servicesCardList {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(2,auto);
+        justify-content: center;
+        gap: 70px;
+    } .servicesSection {
+        padding-bottom: 85px;
+    }
+}
+
+@media (max-width:576px) {
+    .servicesTitle {
+        margin-bottom: 40px;
+        font-size: 16px;
+    }
+    .servicesIHead {
+        margin-bottom: 30px;
+        gap: 30px;
+    }
+    .servicesITitle {
+        font-size: 14px;
+    }
+    .servicesCardList {
+        gap: 40px;
+    }
+    .servicesList {
+        gap: 40px;
+    }
+    .servicesSection {
+        padding-bottom: 60px;
+    }
+}
